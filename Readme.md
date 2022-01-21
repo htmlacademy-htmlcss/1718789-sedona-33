@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Andrey Orlov](https://up.htmlacademy.ru/htmlcss/33/user/1718789).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Карташов](https://htmlacademy.ru/profile/id77080).
 
 ---
 
