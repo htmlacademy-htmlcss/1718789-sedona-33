@@ -158,10 +158,37 @@
       <a class="footer__number" href="+78128121212">+7 (812) 812-12-12</a>
 
       <a class="footer__htmlacademy-logo" href="https://www.htmlacademy.ru"><img src="" alt="Лого htmlacademy"></a>
+</footer>
+
+<section class="popup popup-hide">
+  <h2 class="popup__title">Поиск гостиницы в Седоне</h2>
+  <form class="form-popup" action="https://echo.htmlacademy.ru" method="POST">
+    <label class="form-date form-date__check-in" for="date__check-in">
+      Дата заезда:
+      <input id="date__check-in" type="text" name="date__check-in" placeholder="27 апреля 2020">
+    </label>
+
+    <label class="form-date form-date__exit" for="date__exit">
+      Дата выезда:
+      <input id="date__exit" type="text" name="date__exit" placeholder="1 сентября 2021">
+    </label>
 
 
-  </footer>
+    <label class="form-adults" for="adults">
+      Взрослые:
+      <input id="adults" type="text" name="adults" placeholder="2">
+    </label>
 
+    <label class="form-kids" for="kids">
+      Дата заезда:
+      <input id="kids" type="text" name="kids" placeholder="1">
+    </label>
+    <button class="button" type="submit">Найти</button>
+  </form>
+  <button class="close-btn" type="button">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+</section>
 </body>
 
 </html>
