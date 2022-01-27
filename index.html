@@ -13,7 +13,7 @@
       </a>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html">Главная</a>
+          <a class="main-nav__link main-nav__current" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">О Седоне</a>
@@ -52,43 +52,41 @@
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <ol class="advantages-list">
-
         <li class="advantages-item">
           <div class="advantages__banner">
-            <div class="advantages__specification">
-              <h2 class="advantages__title"></h2>
-              <p class="advantages__desc"></p>
+            <div class="advantages__content">
+              <h2 class="advantages__title">Настоящий городок</h2>
+              <span>&mdash;№1&mdash;</span>
+              <p class="advantages__desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <img src="" alt="">
           </div>
-
-          <ul class="">
-            <li class="advantages__item">
-              <img src="" alt="">
-              <h3 class="advantages__title"></h3>
-              <p class="advantages__desc"></p>
+          <ul class="what-we-have__list">
+            <li class="what-we-have__item">
+              <h3 class="what-we-have__title">Жильё</h3>
+              <p class="what-we-have__desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
 
-            <li class="advantages__item">
-              <img src="" alt="">
-              <h3 class="advantages__title"></h3>
-              <p class="advantages__desc"></p>
-            </li>
+            <ul class="what-we-have__list">
+              <li class="what-we-have__item">
+                <h3 class="what-we-have__title">Еда</h3>
+                <p class="what-we-have__desc">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              </li>
 
-            <li class="advantages__item">
-              <img src="" alt="">
-              <h3 class="advantages__title"></h3>
-              <p class="advantages__desc"></p>
-            </li>
-
+              <ul class="what-we-have__list">
+                <li class="what-we-have__item">
+                  <h3 class="what-we-have__title">Сувениры</h3>
+                  <p class="what-we-have__desc">Не только китайского, но и настоящего местного производства!</p>
+                </li>
           </ul>
         </li>
 
         <li class="advantages__item">
           <div class="advantages__banner">
             <div class="advantages__specification">
-              <h2 class="advantages__title"></h2>
-              <p class="advantages__desc"></p>
+              <h2 class="advantages__title">Там есть мост дьявола</h2>
+              <span>&mdash;№2&mdash;</span>
+              <p class="advantages__desc">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
             <img src="" alt="">
           </div>
@@ -96,25 +94,27 @@
 
         <li class="advantages__item">
           <div class="advantages__about">
-            <h3 class="advantages__title"></h2>
-            <p class="advantages__desc"></p>
+            <h3 class="advantages__title">Небольшая площадь</h2>
+            <span>&mdash;№3&mdash;</span>
+            <p class="advantages__desc">Все достопримечательности находятся очень близко</p>
           </div>
         </li>
 
         <li class="advantages__item">
           <div class="advantages__about">
-            <h3 class="advantages__title"></h2>
-            <p class="advantages__desc"></p>
+            <h3 class="advantages__title">Красивая дорога</h2>
+            <span>&mdash;№4&mdash;</span>
+            <p class="advantages__desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </li>
 
         <li class="advantages__item">
           <div class="advantages__about">
-            <h3 class="advantages__title"></h2>
-            <p class="advantages__desc"></p>
+            <h3 class="advantages__title">Мало туристов</h2>
+            <span>&mdash;№5&mdash;</span>
+            <p class="advantages__desc">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </li>
-
       </ol>
     </section>
 
@@ -122,15 +122,15 @@
       <h2 class="hotel-search__title">Заинтересовались?</h2>
       <p class="hotel-search__desription">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a class="hotel-search__link" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+        <a class="hotel-search__link" href="#">Поиск гостиницы в седоне</a>
     </section>>
 
     <section class="mailing">
-      <h2>Подпишитесь на рассылку</h2>
-      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <h2 class="mailing__title">Подпишитесь на рассылку</h2>
+      <p class="mailing__desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="POST">
-      <input type="email" name="mailing-form" placeholder="Ваш e-mail">
-      <button class="mailing__btn" type="submit">Подписаться</button>
+        <input type="email" name="mailing-form" placeholder="Ваш e-mail">
+          <button class="mailing__btn" type="submit">Подписаться</button>
       </form>
 
     </section>
@@ -140,46 +140,48 @@
     <ul class="footer__social-list">
       <li class="footer__social-item">
         <a class="footer__social-btn" href="https://www.twitter.com/htmlacademy_ru">
-        <span class="visually-hidden">twitter</span>
+          <span class="visually-hidden">twitter</span>
         </a>
       </li>
       <li class="footer__social-item">
         <a class="main-footer__social-btn" href="https://www.facebook.com/htmlacademy">
-        <span class="visually-hidden">facebook</span>
+          <span class="visually-hidden">facebook</span>
         </a>
       </li>
       <li class="footer__social-item">
         <a class="footer__social-btn" href="https://www.youtube.com/HTMLacademyRUS">
-        <span class="visually-hidden">youtube</span>
+          <span class="visually-hidden">youtube</span>
         </a>
       </li>
     </ul>
 
-      <a class="footer__number" href="+78128121212">+7 (812) 812-12-12</a>
+    <a class="footer__number" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
-      <a class="footer__htmlacademy-logo" href="https://www.htmlacademy.ru"><img src="" alt="Лого htmlacademy"></a>
+    <a class="footer__htmlacademy-logo" href="https://www.htmlacademy.ru">
+      <img src="" alt="Лого htmlacademy">
+    </a>
 </footer>
 
 <section class="popup popup-hide">
   <h2 class="popup__title">Поиск гостиницы в Седоне</h2>
   <form class="form-popup" action="https://echo.htmlacademy.ru" method="POST">
-    <label class="form-date form-date__check-in" for="date__check-in">
+    <label class="form-label" for="date__check-in">
       Дата заезда:
       <input id="date__check-in" type="text" name="date__check-in" placeholder="27 апреля 2020">
     </label>
 
-    <label class="form-date form-date__exit" for="date__exit">
+    <label class="form-label" for="date__exit">
       Дата выезда:
       <input id="date__exit" type="text" name="date__exit" placeholder="1 сентября 2021">
     </label>
 
 
-    <label class="form-adults" for="adults">
+    <label class="form-label" for="adults">
       Взрослые:
       <input id="adults" type="text" name="adults" placeholder="2">
     </label>
 
-    <label class="form-kids" for="kids">
+    <label class="form-label" for="kids">
       Дата заезда:
       <input id="kids" type="text" name="kids" placeholder="1">
     </label>
