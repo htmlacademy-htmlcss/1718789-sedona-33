@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -31,19 +32,20 @@
           <a class="user-nav__link" href="#"><span class="visually-hidden">Закладки</span></a>
         </li>
         <li class="user-nav__item">
-          <a class="user-nav__link" href="catalog.html"><span class="visually-hidden">Хочу сюда</span></a>
+          <a class="user-nav__link__want" href="catalog.html"><span class="visually-hidden">Хочу сюда</span></a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main class="main-inner">
-    <section class="catalog__products">
-      <h1>Гостиницы Седоны</h1>
+    <section class="catalog-products">
+      <h1 class="catalog-products__title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
       <li class="breadcrumbs__item">
         <a class="breadcrumbs__link" href="index.html">домик</a>
-      </li><li class="breadcrumbs__item">
+      </li>
+      <li class="breadcrumbs__item">
         <a class="breadcrumbs__link">Гостиницы</a>
       </li>
       </ul>
@@ -182,6 +184,7 @@
       </ul>
 
     <button class="more-products" type="button">Загрузить ещё</button>
+
     <ul class="pagination">
       <li class="pagination__item">
         <a class="pagination__link pagination__current" href="#">1</a>
@@ -203,14 +206,14 @@
       </li>
     </ul>
 
-    <span>Гостиниц на странице:</span>
+    <span class="pogination__sort">Гостиниц на странице:</span>
     <select class="pagination__control" aria-label="Сортировка">
       <option value="number">4</option>
     </select>
 
-    <section class="mailing mailing__catalog">
-      <h2 class="mailing__title">Подпишитесь на рассылку</h2>
-      <p class="mailing__desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <section class="mailing-catalog">
+      <h2 class="mailing-catalog__title">Подпишитесь на рассылку</h2>
+      <p class="mailing-catalog__desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="POST">
         <input type="email" name="mailing-form" placeholder="Ваш e-mail">
           <button class="mailing__btn" type="submit">Подписаться</button>

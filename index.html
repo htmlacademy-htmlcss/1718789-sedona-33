@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -31,7 +32,7 @@
           <a class="user-nav__link" href="#"><span class="visually-hidden">Закладки</span></a>
         </li>
         <li class="user-nav__item">
-          <a class="user-nav__link" href="catalog.html"><span class="visually-hidden">Хочу сюда</span></a>
+          <a class="user-nav__link__want" href="catalog.html">Хочу сюда</a>
         </li>
       </ul>
     </nav>
@@ -56,13 +57,13 @@
           <div class="advantages__banner">
             <div class="advantages__content">
               <h2 class="advantages__title">Настоящий городок</h2>
-              <span>&mdash;№1&mdash;</span>
+              <span class="advantages__span">&mdash;№1&mdash;</span>
               <p class="advantages__desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <img src="image/advantages-1.jpg" width="800" height="384" alt="Фотография гостиницы">
           </div>
           <ul class="what-we-have__list">
-            <li class="what-we-have__item">
+            <li class="what-we-have__item what-we-have__item__blue">
               <h3 class="what-we-have__title">Жильё</h3>
               <p class="what-we-have__desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
@@ -72,7 +73,7 @@
               <p class="what-we-have__desc">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
 
-            <li class="what-we-have__item">
+            <li class="what-we-have__item  what-we-have__item__blue">
               <h3 class="what-we-have__title">Сувениры</h3>
               <p class="what-we-have__desc">Не только китайского, но и настоящего местного производства!</p>
             </li>
@@ -81,36 +82,36 @@
 
         <li class="advantages__item">
           <div class="advantages__banner">
-            <div class="advantages__specification">
+            <div class="advantages__content">
               <h2 class="advantages__title">Там есть мост дьявола</h2>
-              <span>&mdash;№2&mdash;</span>
+              <span class="advantages__span">&mdash;№2&mdash;</span>
               <p class="advantages__desc">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
             <img src="image/advantages-2.jpg" width="800" height="384" alt="Фотогрфия местной достопримечательности Мост-дьявола">
           </div>
         </li>
 
-        <li class="advantages__item">
-          <div class="advantages__about">
-            <h3 class="advantages__title">Небольшая площадь</h2>
-            <span>&mdash;№3&mdash;</span>
-            <p class="advantages__desc">Все достопримечательности находятся очень близко</p>
+        <li class="what-we-have__item">
+          <div class="what-we-have__about  what-we-have__item__blue">
+            <h3 class="what-we-have__title">Небольшая площадь</h3>
+            <span class="advantages__span">&mdash;№3&mdash;</span>
+            <p class="what-we-have__desc">Все достопримечательности находятся очень близко</p>
           </div>
         </li>
 
-        <li class="advantages__item">
-          <div class="advantages__about">
-            <h3 class="advantages__title">Красивая дорога</h2>
-            <span>&mdash;№4&mdash;</span>
-            <p class="advantages__desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        <li class="what-we-have__item">
+          <div class="what-we-have__about  what-we-have__item__gray">
+            <h3 class="what-we-have__title">Красивая дорога</h3>
+            <span class="advantages__span">&mdash;№4&mdash;</span>
+            <p class="what-we-have__desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </li>
 
-        <li class="advantages__item">
-          <div class="advantages__about">
-            <h3 class="advantages__title">Мало туристов</h2>
-            <span>&mdash;№5&mdash;</span>
-            <p class="advantages__desc">Большинство едет в Гранд Каньон и толпится там</p>
+        <li class="what-we-have__item">
+          <div class="what-we-have__about  what-we-have__item__blue">
+            <h3 class="what-we-have__title">Мало туристов</h3>
+            <span class="advantages__span">&mdash;№5&mdash;</span>
+            <p class="what-we-have__desc">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </li>
       </ol>
@@ -120,12 +121,12 @@
       <h2 class="hotel-search__title">Заинтересовались?</h2>
       <p class="hotel-search__desription">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a class="hotel-search__link" href="#">Поиск гостиницы в седоне</a>
+        <a class="hotel-search__link" href="catalog.html">Поиск гостиницы в седоне</a>
     </section>>
 
-    <section class="mailing">
-      <h2 class="mailing__title">Подпишитесь на рассылку</h2>
-      <p class="mailing__desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <section class="mailing-main">
+      <h2 class="mailing-main__title">Подпишитесь на рассылку</h2>
+      <p class="mailing-main__desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="POST">
         <input type="email" name="mailing-form" placeholder="Ваш e-mail">
           <button class="mailing__btn" type="submit">Подписаться</button>
