@@ -38,6 +38,10 @@ body {
   text-decoration: none;
 }
 
+.user-nav__link {
+  text-decoration: none;
+}
+
 .user-nav__link__want {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
@@ -177,6 +181,17 @@ body {
   text-transform: uppercase;
 }
 
+.mailing-input::placeholder {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.footer__social-btn {
+  text-decoration: none;
+}
+
 .footer__number {
   font-size: 40px;
   line-height: 40px;
@@ -215,13 +230,35 @@ body {
   text-transform: uppercase;
 }
 
+.button-apply {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: #83B3D3;
+}
+
+.button-reset {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.catalog__link {
+  text-decoration: none;
+}
+
 .catalog__title {
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 31px;
   font-weight: 700;
   color: #000000;
-  text-decoration: none;
 }
 
 .catalog__desc {
@@ -237,6 +274,7 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   color: #ffffff;
   background-color: #756257;
 }
@@ -261,6 +299,7 @@ body {
 }
 
 .more-products {
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -286,11 +325,11 @@ body {
   color: #ffffff;
 }
 
-/* .pagination__sort {
+.pagination__sort {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
-} */
+}
 
 .mailing-catalog {
   text-align: center;
@@ -307,6 +346,38 @@ body {
   font-size: 22px;
   color: #333333;
 }
+
+.popup__title {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form-label {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.button__search {
+  font-family: PT Sans;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #83B3D3;
+}
+
+.popup__input::placeholder {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #000000;
+}
+
+
 
 
 
