@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <base href="https://htmlacademy-htmlcss.github.io/1718789-sedona-33/5/">
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-nav">
+      <a href="index.html" class="main-header__logo">
+        <img src="image/logo/logo-header.svg" width="139" height="70" alt="Логотип сайта Гостиницы Седоны">
+      </a>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__current" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">О Седоне</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+
+      <ul class="main-nav__list user-nav__list">
+        <li class="user-nav__item">
+          <a class="user-nav__link" href="index.html"><span class="visually-hidden">Поиск</span></a>
+        </li>
+        <li class="user-nav__item">
+          <a class="user-nav__link" href="#"><span class="visually-hidden">Закладки</span></a>
+        </li>
+        <li class="user-nav__item">
+          <a class="user-nav__link__want" href="catalog.html">Хочу сюда</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main main__container">
+    <div class="page-container">
+      <h1 class="main__title visually-hidden">Гостиницы Седоны</h1>
+      <div class="main__logo">
+        <img class="main__logo__img" src="image/logo/logo-main.svg" width="458" height="352" alt="Большой логотип гостиниц Седоны">
+      </div>
+
+      <div class="about-sedona">
+        <h2 class="about-sedona__title">Седона — небольшой городок в Аризоне,
+        заслуживающий большего!</h2>
+        <p class="about-sedona__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      </div>
+
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ol class="advantages__list">
+          <li class="advantages__item">
+            <div class="advantages__banner">
+              <div class="advantages__content">
+                <h2 class="advantages__title">Настоящий городок</h2>
+                <span class="advantages__span">&mdash;№1&mdash;</span>
+                <p class="advantages__desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <img src="image/advantages-1.jpg" width="800" height="384" alt="Фотография гостиницы">
+            </div>
+            <ul class="what-we-have__list">
+              <li class="what-we-have__item what-we-have__item__blue">
+                <h3 class="what-we-have__title">Жильё</h3>
+                <p class="what-we-have__desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+
+              <li class="what-we-have__item">
+                <h3 class="what-we-have__title">Еда</h3>
+                <p class="what-we-have__desc">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+
+              <li class="what-we-have__item  what-we-have__item__blue">
+                <h3 class="what-we-have__title">Сувениры</h3>
+                <p class="what-we-have__desc">Не только китайского, но и настоящего местного производства!</p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="advantages__item">
+            <div class="advantages__banner">
+              <div class="advantages__content">
+                <h2 class="advantages__title">Там есть мост дьявола</h2>
+                <span class="advantages__span">&mdash;№2&mdash;</span>
+                <p class="advantages__desc">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
+              <img src="image/advantages-2.jpg" width="800" height="384" alt="Фотогрфия местной достопримечательности Мост-дьявола">
+            </div>
+          </li>
+
+          <li class="what-we-have__item">
+            <div class="what-we-have__about  what-we-have__item__blue">
+              <h3 class="what-we-have__title">Небольшая площадь</h3>
+              <span class="advantages__span">&mdash;№3&mdash;</span>
+              <p class="what-we-have__desc">Все достопримечательности находятся очень близко</p>
+            </div>
+          </li>
+
+          <li class="what-we-have__item">
+            <div class="what-we-have__about  what-we-have__item__gray">
+              <h3 class="what-we-have__title">Красивая дорога</h3>
+              <span class="advantages__span">&mdash;№4&mdash;</span>
+              <p class="what-we-have__desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+          </li>
+
+          <li class="what-we-have__item">
+            <div class="what-we-have__about  what-we-have__item__blue">
+              <h3 class="what-we-have__title">Мало туристов</h3>
+              <span class="advantages__span">&mdash;№5&mdash;</span>
+              <p class="what-we-have__desc">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="hotel-search">
+        <h2 class="hotel-search__title">Заинтересовались?</h2>
+        <p class="hotel-search__desription">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+        </p>
+        <a class="hotel-search__link" href="catalog.html">Поиск гостиницы в седоне</a>
+      </section>>
+
+      <section class="mailing-main">
+        <h2 class="mailing-main__title">Подпишитесь на рассылку</h2>
+        <p class="mailing-main__desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="POST">
+          <input class="mailing__input" type="email" name="mailing-form" placeholder="Ваш e-mail">
+          <button class="mailing__btn" type="submit">Подписаться</button>
+        </form>
+      </section>
+      </div>
+    </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a class="footer__social-btn" href="https://www.twitter.com/htmlacademy_ru">
+            <span class="visually-hidden">twitter</span>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-btn" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">facebook</span>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-btn" href="https://www.youtube.com/HTMLacademyRUS">
+            <span class="visually-hidden">youtube</span>
+          </a>
+        </li>
+      </ul>
+
+      <a class="footer__number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+
+      <a class="footer__htmlacademy-logo" href="https://www.htmlacademy.ru">
+        <img src="image/logo/logo-htmlacademy-footer.svg" width="115" height="34" alt="Лого htmlacademy">
+      </a>
+    </div>
+  </footer>
+
+<!-- <section class="popup popup-hide">
+  <h2 class="popup__title">Поиск гостиницы в Седоне</h2>
+  <form class="form-popup" action="https://echo.htmlacademy.ru" method="POST">
+    <label class="form-label" for="date__check-in">
+      Дата заезда:
+      <input class="popup__input" id="date__check-in" type="text" name="date__check-in" placeholder="27 апреля 2020">
+    </label>
+
+    <label class="form-label" for="date__exit">
+      Дата выезда:
+      <input class="popup__input" id="date__exit" type="text" name="date__exit" placeholder="1 сентября 2021">
+    </label>
+
+
+    <label class="form-label" for="adults">
+      Взрослые:
+      <input class="popup__input" id="adults" type="text" name="adults" placeholder="2">
+    </label>
+
+    <label class="form-label" for="kids">
+      Дата заезда:
+      <input class="popup__input" id="kids" type="text" name="kids" placeholder="1">
+    </label>
+    <button class="button__search" type="submit">Найти</button>
+  </form>
+  <button class="close-btn" type="button">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+</section> -->
+</body>
+
+</html>
