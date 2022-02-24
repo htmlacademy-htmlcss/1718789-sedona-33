@@ -33,7 +33,7 @@ body {
   background-color: #ffffff;
 }
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -42,7 +42,7 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
 .main__container {
   flex-grow: 1;
@@ -50,6 +50,10 @@ body {
 
 .main-header {
   background-color: #F2F2F2;
+}
+
+.main-header__logo {
+  height: 70px;
 }
 
 .main-nav {
@@ -139,8 +143,8 @@ body {
 }
 
 .about-sedona__title {
-  margin-top: 63px;
-  margin-bottom: 31px;
+  padding-top: 63px;
+  margin:0 0 31px 0;
   width: 720px;
   font-size: 30px;
   line-height: 36px;
@@ -149,7 +153,8 @@ body {
 }
 
 .about-sedona__description {
-  margin: 0 0 80px 0;
+  margin: 0;
+  padding-bottom: 80px;
   width: 720px;
   font-size: 22px;
   line-height: 36px;
@@ -182,7 +187,8 @@ body {
 }
 
 .advantages__title {
-  margin: 97px 0 30px 0;
+  margin: 0 0 30px 0;
+  padding-top: 97px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -190,14 +196,17 @@ body {
 }
 
 .advantages__span {
-  margin: 0 75px 0 75px;
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 0 75px 0 75px;
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
 }
 
 .advantages__desc {
-  margin: 30px 90px 87px 90px;
+  margin: 0;
+  padding: 0 90px 0 90px;
   width: 220px;
 }
 
@@ -250,7 +259,8 @@ body {
 }
 
 .hotel-search__title {
-  margin: 91px 240px 0 240px;
+  margin: 0 0 29px 0;
+  padding-top: 91px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -258,7 +268,7 @@ body {
 }
 
 .hotel-search__desc {
-  margin: 29px 240px 0 240px;
+  margin: 0 0 56px 0;
   font-size: 22px;
   color: #333333;
 }
@@ -334,6 +344,11 @@ body {
   width: 1200px;
   min-height: 120px;
   margin: 0 auto;
+  padding: 40px 72px;
+}
+
+.footer {
+  min-height: 120px;
 }
 
 .footer__social-list {
@@ -375,12 +390,13 @@ body {
   background-image: url("..//image/catalog-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  height: 408px;
 }
 
 .catalog-products__title {
   width: 528px;
-  margin: 0 5px 0 71px;
-  padding-top: 35px;
+  margin: 0 0 5px 0;
+  padding: 35px 0 0 71px;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
@@ -389,8 +405,8 @@ body {
 
 .breadcrumbs {
   display: flex;
-  margin: 0 0 0 73px;
-  padding: 0;
+  margin: 0 0 45px 0px;
+  padding-left: 73px;
   color: #ffffff;
   list-style: none;
   text-decoration: none;
@@ -399,7 +415,6 @@ body {
 
 .catalog-filter {
   display: flex;
-  margin-top: 45px;
   padding-bottom: 83px;
 }
 
@@ -448,7 +463,8 @@ body {
 }
 
 .filter p {
-  margin: 50px 192px 56px 71px;
+  margin: 0 192px 56px 0;
+  padding: 50px 0 0 71px;
   font-size: 30px;
   line-height: 39px;
   font-weight: 700;
@@ -484,6 +500,8 @@ body {
   font-size: 24px;
   line-height: 31px;
   font-weight: 700;
+  padding: 16px;
+  margin: 0 0 16px 0;
   color: #000000;
 }
 
