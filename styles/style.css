@@ -138,12 +138,11 @@ body {
 
 
 .about-sedona {
-  padding: 0 240px;
+  padding: 63px 240px 80px 240px;
   text-align: center;
 }
 
 .about-sedona__title {
-  padding-top: 63px;
   margin:0 0 31px 0;
   width: 720px;
   font-size: 30px;
@@ -154,7 +153,6 @@ body {
 
 .about-sedona__description {
   margin: 0;
-  padding-bottom: 80px;
   width: 720px;
   font-size: 22px;
   line-height: 36px;
@@ -188,7 +186,6 @@ body {
 
 .advantages__title {
   margin: 0 0 30px 0;
-  padding-top: 97px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -254,13 +251,12 @@ body {
 
 
 .hotel-search {
-  padding: 0 240px;
+  padding: 91px 240px 93px 240px;
   text-align: center;
 }
 
 .hotel-search__title {
   margin: 0 0 29px 0;
-  padding-top: 91px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -276,8 +272,6 @@ body {
 .hotel-search__link {
   display: inline-block;
   width: 575px;
-  margin-top: 56px;
-  margin-bottom: 93px;
   padding: 15px 0;
   border-radius: 10px;
   font-family: "PT Sans", sans-serif;
@@ -291,7 +285,7 @@ body {
 }
 
 .mailing-main {
-  padding: 0 240px;
+  padding: 94px 240px 0 240px;
   min-height: 411px;
   text-align: center;
   color: #ffffff;
@@ -301,8 +295,7 @@ body {
 }
 
 .mailing-main__title {
-  padding-top: 94px;
-  margin: 0;
+  margin: 0 0 29px 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -310,8 +303,7 @@ body {
 }
 
 .mailing-main__desc {
-  margin-top: 29px;
-  margin-bottom: 46px;
+  margin:0 0 46px 0;
   font-size: 22px;
 }
 
@@ -391,12 +383,12 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   height: 408px;
+  padding-top: 35px;
 }
 
 .catalog-products__title {
   width: 528px;
-  margin: 0 0 5px 0;
-  padding: 35px 0 0 71px;
+  margin: 0 0 5px 71px;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
@@ -460,11 +452,11 @@ body {
 .filter {
   display: flex;
   align-items: center;
+  padding-top: 44px;
 }
 
 .filter p {
-  margin: 0 192px 56px 0;
-  padding: 50px 0 0 71px;
+  margin: 0 192px 56px 71px;
   font-size: 30px;
   line-height: 39px;
   font-weight: 700;
@@ -482,7 +474,7 @@ body {
 }
 
 .catalog__list {
-  margin-bottom: 84px;
+  margin-bottom: 34px;
   list-style: none;
 }
 
@@ -513,7 +505,6 @@ body {
 
 .catalog__about {
   display: inline-block;
-  padding: 9px 0 10px 0;
   width: 133px;
   border-radius: 4px;
   font-family: "PT Sans", sans-serif;
@@ -552,6 +543,10 @@ body {
   text-transform: uppercase;
   color: #333333;
   background-color: #F2F2F2;
+}
+
+.design-line {
+  margin-bottom: 30px;
 }
 
 .more-products {
@@ -622,10 +617,10 @@ body {
 
 .mailing-catalog {
   text-align: center;
+  padding-top: 73px;
 }
 
 .mailing-catalog__title {
-  padding-top: 73px;
   margin: 0 0 46px 0;
   font-size: 30px;
   line-height: 36px;
