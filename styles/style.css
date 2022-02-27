@@ -33,12 +33,27 @@ body {
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main__container {
   flex-grow: 1;
 }
 
 .main-header {
   background-color: #F2F2F2;
+}
+
+.main-header__logo {
+  height: 70px;
 }
 
 .main-nav {
@@ -48,13 +63,17 @@ body {
 }
 
 .main-nav__list {
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0 30px;
   padding: 0;
   width: 530px;
   list-style: none;
 }
 
 .main-nav__link {
+  display: inline-block;
+  padding: 20px 17px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   text-align: center;
@@ -63,16 +82,26 @@ body {
   text-decoration: none;
 }
 
+
 .user-nav__list {
+  display: flex;
+  justify-content: end;
+  align-items: center;
   max-width: 300px;
   margin-left: auto;
 }
 
 .user-nav__link {
+  min-width: 19px;
+  min-height: 19px;
   text-decoration: none;
 }
 
 .user-nav__link__want {
+  width: 160px;
+  height: 37px;
+  padding: 9px 15px 8px 15px;
+  border-radius: 4px;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -84,12 +113,19 @@ body {
   text-decoration: none;
 }
 
+.main {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 .page-container {
   width: 1200px;
   margin: 0 auto;
 }
 
 .main__logo {
+  padding-top: 51px;
+  padding-bottom: 83px;
   background-image: url("../image/main-logo-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -100,17 +136,14 @@ body {
   margin: 0 auto;
 }
 
-.main {
-  background-color: #ffffff;
-  color: #000000;
-}
 
 .about-sedona {
-  padding: 0 240px;
+  padding: 63px 240px 80px 240px;
   text-align: center;
 }
 
 .about-sedona__title {
+  margin:0 0 31px 0;
   width: 720px;
   font-size: 30px;
   line-height: 36px;
@@ -119,6 +152,7 @@ body {
 }
 
 .about-sedona__description {
+  margin: 0;
   width: 720px;
   font-size: 22px;
   line-height: 36px;
@@ -137,17 +171,38 @@ body {
   display: flex;
 }
 
+.advantages__banner-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .advantages__content {
+  width: 400px;
+  box-sizing: border-box;
+  padding: 97px 90px 87px 90px;
   background-color: #83B3D3;;
   color: #ffffff;
   text-align: center;
 }
 
 .advantages__title {
+  margin: 0 0 30px 0;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.advantages__span {
+  display: inline-block;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.advantages__desc {
+  margin: 0;
 }
 
 .what-we-have__list {
@@ -158,7 +213,11 @@ body {
 }
 
 .what-we-have__item {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   width: 400px;
+  padding: 89px 75px 79px 75px;
   text-align: center;
 }
 
@@ -180,27 +239,25 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+  margin: 0 0 20px 0;
   text-transform: uppercase;
 }
 
 .what-we-have__desc {
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
   color: #333333;
 }
 
-.advantages__span {
-  font-size: 18px;
-  line-height: 21px;
-  text-transform: uppercase;
-}
 
 .hotel-search {
-  padding: 0 240px;
+  padding: 91px 240px 93px 240px;
   text-align: center;
 }
 
 .hotel-search__title {
+  margin: 0 0 29px 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -208,11 +265,16 @@ body {
 }
 
 .hotel-search__desc {
+  margin: 0 0 56px 0;
   font-size: 22px;
   color: #333333;
 }
 
 .hotel-search__link {
+  display: inline-block;
+  width: 575px;
+  padding: 15px 0;
+  border-radius: 10px;
   font-family: "PT Sans", sans-serif;
   line-height: 36px;
   font-weight: 700;
@@ -224,7 +286,9 @@ body {
 }
 
 .mailing-main {
-  padding: 0 240px;
+  box-sizing: border-box;
+  padding: 94px 240px 94px 240px;
+  min-height: 411px;
   text-align: center;
   color: #ffffff;
   background-image: url("../image/background-mailing.jpg");
@@ -233,6 +297,7 @@ body {
 }
 
 .mailing-main__title {
+  margin: 0 0 29px 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -240,6 +305,7 @@ body {
 }
 
 .mailing-main__desc {
+  margin:0 0 46px 0;
   font-size: 22px;
 }
 
@@ -268,13 +334,31 @@ body {
 
 .footer__container {
   display: flex;
+  align-items: center;
+  box-sizing: border-box;
   width: 1200px;
+  min-height: 120px;
   margin: 0 auto;
+  padding: 40px 72px;
+}
+
+.footer {
+  min-height: 120px;
 }
 
 .footer__social-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 240px;
+  margin: 0;
   padding: 0 0 0 72px;
+  list-style: none;
+}
+
+.footer__social-item {
+  width: 20px;
+  height: 20px;
+  margin-right: 29px;
 }
 
 .footer__social-btn {
@@ -301,11 +385,14 @@ body {
   background-image: url("..//image/catalog-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  height: 408px;
+  box-sizing: border-box;
+  padding: 35px 72px 83px 72px;
 }
 
 .catalog-products__title {
   width: 528px;
-  margin: 71px;
+  margin: 0 0 5px 0;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
@@ -314,36 +401,28 @@ body {
 
 .breadcrumbs {
   display: flex;
-  margin: 0 0 0 73px;
+  margin: 0 0 45px 0px;
   padding: 0;
   color: #ffffff;
   list-style: none;
   text-decoration: none;
 }
 
+
 .catalog-filter {
   display: flex;
-}
-
-.catalog-filter__group {
-  margin-left: 71px;
 }
 
 .catalog-filter__title {
   font-weight: 700;
 }
 
-.filter p {
-  font-size: 30px;
-  line-height: 39px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
 
 .button-apply {
   margin-left: auto;
   width: 160px;
   height: 48px;
+  border-radius: 4px;
   font-family: inherit;
   font-size: 16px;
   line-height: 21px;
@@ -366,7 +445,43 @@ body {
 }
 
 .catalog__wrapper {
-  width: 1056px;
+  width: 1200px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 44px 72px 56px 71px;
+}
+
+.filter__desc, .filter__span {
+  margin: 0;
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.select__control {
+  margin-left: auto;
+  width: 287px;
+  height: 48px;
+}
+
+.card-filter__list {
+  display: flex;
+  list-style: none;
+}
+
+.catalog__list {
+  margin-bottom: 34px;
+  list-style: none;
+}
+
+.catalog__item {
+  min-width: 340px;
+  min-height: 438px;
 }
 
 .catalog__link {
@@ -378,6 +493,8 @@ body {
   font-size: 24px;
   line-height: 31px;
   font-weight: 700;
+  padding: 16px;
+  margin: 0 0 16px 0;
   color: #000000;
 }
 
@@ -388,6 +505,9 @@ body {
 }
 
 .catalog__about {
+  display: inline-block;
+  width: 133px;
+  border-radius: 4px;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 21px;
@@ -400,6 +520,10 @@ body {
 }
 
 .catalog__btn {
+  display: inline-block;
+  padding: 9px 0 10px 0;
+  width: 133px;
+  border-radius: 4px;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 21px;
@@ -410,6 +534,10 @@ body {
 }
 
 .catalog__rating {
+  display: inline-block;
+  padding: 9px 0 10px 0;
+  width: 133px;
+  border-radius: 4px;
   font-size: 16px;
   line-height: 21px;
   text-align: center;
@@ -418,7 +546,15 @@ body {
   background-color: #F2F2F2;
 }
 
+.more-products__wrapper {
+  padding: 30px 290px;
+}
+
 .more-products {
+  display: inline-block;
+  width: 620px;
+  padding: 17px 0 17px 0;
+  border-radius: 4px;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
@@ -429,10 +565,15 @@ body {
   background-color: #83B3D3;
 }
 
+.pagination__wrapper {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 33px 72px 0 72px;
+}
+
 .pagination {
   display: flex;
-  gap: 8px;
-  margin: 0;
   padding: 0;
   font-size: 20px;
   line-height: 26px;
@@ -444,6 +585,7 @@ body {
 }
 
 .pagination__item {
+  margin-right: 8px;
   width: 55px;
   height: 55px;
   background-color: #83B3D3;
@@ -461,16 +603,25 @@ body {
 }
 
 .pagination__sort {
+  margin-left: 291px;
+  padding-right: 51px;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
 }
 
+.pagination__control {
+  width: 160px;
+  height: 48px;
+}
+
 .mailing-catalog {
+  padding: 77px 240px 141px 240px;
   text-align: center;
 }
 
 .mailing-catalog__title {
+  margin: 0 0 46px 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -478,8 +629,13 @@ body {
 }
 
 .mailing-catalog__desc {
+  margin: 0 0 46px 0;
   font-size: 22px;
   color: #333333;
+}
+
+.mailing-form {
+  margin: 0;
 }
 
 .popup__title {

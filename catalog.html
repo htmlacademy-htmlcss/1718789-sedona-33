@@ -39,7 +39,7 @@
     </nav>
   </header>
 
-  <main class="main-inner">
+  <main class="main">
     <div class="page-container">
     <section class="catalog-products">
       <h1 class="catalog-products__title">Гостиницы Седоны</h1>
@@ -106,7 +106,7 @@
 
     <div class="catalog__wrapper">
     <section class="filter">
-      <p>Найдено гостиниц: <span>38</span></p>
+      <p class="filter__desc">Найдено гостиниц: <span class="filter__span">38</span></p>
       <select class="select__control" aria-label="Сортировка">
         <option value="cheap">Сначала дешёвые</option>
       </select>
@@ -187,8 +187,15 @@
         </li>
       </ul>
 
-    <button class="more-products" type="button">Загрузить ещё</button>
+      <div class="design-line">линия</div>
 
+      <div class="more-products__wrapper">
+        <button class="more-products" type="button">Загрузить ещё</button>
+      </div>
+
+      <div class="design-line">линия</div>
+
+  <div class="pagination__wrapper">
     <ul class="pagination">
       <li class="pagination__item pagination__current">
         <a class="pagination__link" href="#">1</a>
@@ -214,6 +221,7 @@
     <select class="pagination__control" aria-label="Сортировка">
       <option value="number">4</option>
     </select>
+    </div>
     </div>
 
     <section class="mailing-catalog">
