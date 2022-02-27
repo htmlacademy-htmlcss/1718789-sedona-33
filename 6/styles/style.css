@@ -138,12 +138,11 @@ body {
 
 
 .about-sedona {
-  padding: 0 240px;
+  padding: 63px 240px 80px 240px;
   text-align: center;
 }
 
 .about-sedona__title {
-  padding-top: 63px;
   margin:0 0 31px 0;
   width: 720px;
   font-size: 30px;
@@ -154,7 +153,6 @@ body {
 
 .about-sedona__description {
   margin: 0;
-  padding-bottom: 80px;
   width: 720px;
   font-size: 22px;
   line-height: 36px;
@@ -180,7 +178,8 @@ body {
 
 .advantages__content {
   width: 400px;
-  height: 384px;
+  box-sizing: border-box;
+  padding: 97px 90px 87px 90px;
   background-color: #83B3D3;;
   color: #ffffff;
   text-align: center;
@@ -188,7 +187,6 @@ body {
 
 .advantages__title {
   margin: 0 0 30px 0;
-  padding-top: 97px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -198,7 +196,6 @@ body {
 .advantages__span {
   display: inline-block;
   margin-bottom: 30px;
-  padding: 0 75px 0 75px;
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
@@ -206,8 +203,6 @@ body {
 
 .advantages__desc {
   margin: 0;
-  padding: 0 90px 0 90px;
-  width: 220px;
 }
 
 .what-we-have__list {
@@ -220,8 +215,9 @@ body {
 .what-we-have__item {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   width: 400px;
-  min-height: 384px;
+  padding: 89px 75px 79px 75px;
   text-align: center;
 }
 
@@ -243,24 +239,25 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+  margin: 0 0 20px 0;
   text-transform: uppercase;
 }
 
 .what-we-have__desc {
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
   color: #333333;
 }
 
 
 .hotel-search {
-  padding: 0 240px;
+  padding: 91px 240px 93px 240px;
   text-align: center;
 }
 
 .hotel-search__title {
   margin: 0 0 29px 0;
-  padding-top: 91px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -276,8 +273,6 @@ body {
 .hotel-search__link {
   display: inline-block;
   width: 575px;
-  margin-top: 56px;
-  margin-bottom: 93px;
   padding: 15px 0;
   border-radius: 10px;
   font-family: "PT Sans", sans-serif;
@@ -291,7 +286,8 @@ body {
 }
 
 .mailing-main {
-  padding: 0 240px;
+  box-sizing: border-box;
+  padding: 94px 240px 94px 240px;
   min-height: 411px;
   text-align: center;
   color: #ffffff;
@@ -301,8 +297,7 @@ body {
 }
 
 .mailing-main__title {
-  padding-top: 94px;
-  margin: 0;
+  margin: 0 0 29px 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -310,8 +305,7 @@ body {
 }
 
 .mailing-main__desc {
-  margin-top: 29px;
-  margin-bottom: 46px;
+  margin:0 0 46px 0;
   font-size: 22px;
 }
 
@@ -341,6 +335,7 @@ body {
 .footer__container {
   display: flex;
   align-items: center;
+  box-sizing: border-box;
   width: 1200px;
   min-height: 120px;
   margin: 0 auto;
@@ -391,12 +386,13 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   height: 408px;
+  box-sizing: border-box;
+  padding: 35px 72px 83px 72px;
 }
 
 .catalog-products__title {
   width: 528px;
   margin: 0 0 5px 0;
-  padding: 35px 0 0 71px;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
@@ -406,7 +402,7 @@ body {
 .breadcrumbs {
   display: flex;
   margin: 0 0 45px 0px;
-  padding-left: 73px;
+  padding: 0;
   color: #ffffff;
   list-style: none;
   text-decoration: none;
@@ -415,11 +411,6 @@ body {
 
 .catalog-filter {
   display: flex;
-  padding-bottom: 83px;
-}
-
-.catalog-filter__group {
-  margin-left: 71px;
 }
 
 .catalog-filter__title {
@@ -454,17 +445,18 @@ body {
 }
 
 .catalog__wrapper {
-  width: 1056px;
+  width: 1200px;
 }
 
 .filter {
   display: flex;
   align-items: center;
+  box-sizing: border-box;
+  padding: 44px 72px 56px 71px;
 }
 
-.filter p {
-  margin: 0 192px 56px 0;
-  padding: 50px 0 0 71px;
+.filter__desc, .filter__span {
+  margin: 0;
   font-size: 30px;
   line-height: 39px;
   font-weight: 700;
@@ -472,6 +464,7 @@ body {
 }
 
 .select__control {
+  margin-left: auto;
   width: 287px;
   height: 48px;
 }
@@ -482,7 +475,7 @@ body {
 }
 
 .catalog__list {
-  margin-bottom: 84px;
+  margin-bottom: 34px;
   list-style: none;
 }
 
@@ -513,7 +506,6 @@ body {
 
 .catalog__about {
   display: inline-block;
-  padding: 9px 0 10px 0;
   width: 133px;
   border-radius: 4px;
   font-family: "PT Sans", sans-serif;
@@ -554,11 +546,13 @@ body {
   background-color: #F2F2F2;
 }
 
+.more-products__wrapper {
+  padding: 30px 290px;
+}
+
 .more-products {
   display: inline-block;
   width: 620px;
-  margin-left: 290px;
-  margin-bottom: 60px;
   padding: 17px 0 17px 0;
   border-radius: 4px;
   font-family: "PT Sans", sans-serif;
@@ -574,11 +568,12 @@ body {
 .pagination__wrapper {
   display: flex;
   align-items: center;
+  box-sizing: border-box;
+  padding: 33px 72px 0 72px;
 }
 
 .pagination {
   display: flex;
-  margin-left: 72px;
   padding: 0;
   font-size: 20px;
   line-height: 26px;
@@ -621,11 +616,11 @@ body {
 }
 
 .mailing-catalog {
+  padding: 77px 240px 141px 240px;
   text-align: center;
 }
 
 .mailing-catalog__title {
-  padding-top: 73px;
   margin: 0 0 46px 0;
   font-size: 30px;
   line-height: 36px;
@@ -640,7 +635,7 @@ body {
 }
 
 .mailing-form {
-  margin: 0 0 141px 0;
+  margin: 0;
 }
 
 .popup__title {
