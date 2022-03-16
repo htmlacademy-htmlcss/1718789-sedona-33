@@ -16,13 +16,13 @@
         </a>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__current" href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">О Седоне</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Гостиницы</a>
+            <a class="main-nav__link main-nav__link-current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
 
@@ -49,71 +49,110 @@
   <main class="main">
     <div class="page-container">
     <section class="catalog-products">
+      <div class="catalog-products__container">
       <h1 class="catalog-products__title">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs">
+      <ul class="breadcrumbs__list">
       <li class="breadcrumbs__item">
-        <a class="breadcrumbs__link" href="index.html">
-          <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 0.300049L0 5.80005V12H12V5.80005L6 0.300049ZM11 11H1V6.20005L6 1.70005L11 6.20005V11Z" fill="white"/>
-            <path d="M4 10H5V7.5H7V10H8V6.5H4V10Z" fill="white"/>
-          </svg>
+        <a class="breadcrumbs__link-icon" href="index.html">
+          <span class="visually-hidden">Главная</span>
         </a>
       </li>
       <li class="breadcrumbs__item">
-        <a class="breadcrumbs__link breadcrumbs__link__current" href="#">Гостиницы</a>
+        <a class="breadcrumbs__link" href="#">Гостиницы</a>
       </li>
       </ul>
       <h2 class="visually-hidden" hidden>Фильтр поиска гостиниц</h2>
-      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="catalog-filter__group">
+
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" name="catalog-filter" method="get">
+
+        <fieldset class="catalog-filter__group catalog-filter__infrastructure">
           <legend class="catalog-filter__title">Инфраструктура:</legend>
           <ul class="catalog-filter__list">
             <li class="catalog-filter__item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                Бассейн
+                <input class="visually-hidden control__input" type="checkbox" name="swimming-pool" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Бассейн</span>
               </label>
             </li>
             <li class="catalog-filter__item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="parking-space" checked>
-                Парковка
+                <input class="visually-hidden control__input" type="checkbox" name="parking-space" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Парковка</span>
               </label>
             </li>
             <li class="catalog-filter__item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="wi-fi">
-                Wi-Fi
+                <input class="visually-hidden control__input" type="checkbox" name="wi-fi">
+                <span class="control__mark"></span>
+                <span class="control__label">Wi-Fi</span>
               </label>
             </li>
           </ul>
       </fieldset>
-      <fieldset class="catalog-filter__group">
+      <fieldset class="catalog-filter__group catalog-filter__type-house">
         <legend class="catalog-filter__title">Тип жилья:</legend>
         <ul class="catalog-filter__list">
           <li class="catalog-filter__item">
             <label class="control">
-              <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>
-              Отель
+              <input class="visually-hidden control__input" type="radio" name="type-of-housing" value="hotel" checked>
+              <span class="control__mark"></span>
+              <span class="control__label">Гостиница</span>
             </label>
           </li>
           <li class="catalog-filter__item">
             <label class="control">
-              <input class="control-input" type="radio" name="type-of-housing" value="mtoel">
-              Мотель
+              <input class="visually-hidden control__input" type="radio" name="type-of-housing" value="mtoel">
+              <span class="control__mark"></span>
+              <span class="control__label">Мотель</span>
             </label>
           </li>
           <li class="catalog-filter__item">
             <label class="control">
-              <input class="control-input" type="radio" name="type-of-housing" value="apartments">
-              Апартаменты
+              <input class="visually-hidden control__input" type="radio" name="type-of-housing" value="apartments">
+              <span class="control__mark"></span>
+              <span class="control__label">Апартаменты</span>
             </label>
           </li>
         </ul>
       </fieldset>
-      <button class="button-apply" type="submit">Применить</button>
-      <button class="button-reset" type="submit">Сбросить</button>
+
+      <fieldset class="catalog-filter__group catalog-filter__price">
+        <legend class="catalog-filter__title catalog-filter__title-cost">Стоимость, ₽:</legend>
+
+        <div class="range-inputs__wrapper">
+          <label class="catalog-filter__label">
+            <span class="range-min__title">от</span>
+            <input class="range__input range__input-min-price" type="number" name="min-price" value="0">
+          </label>
+
+          <label class="catalog-filter__label">
+            <span class="range-max__title">до</span>
+            <input class="range__input range__input-max-price" type="number" name="max-price" value="9000">
+          </label>
+        </div>
+
+        <div class="range">
+          <div class="range__scale">
+            <div class="range__bar">
+              <button class="range__toggle toggle__min" type="button">
+                <span class="visually-hidden">Изменить минимальную цену</span>
+              </button>
+              <button class="range__toggle toggle__max" type="button">
+                <span class="visually-hidden">Изменить максимальную цену</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="catalog-filter__btns">
+        <button class="button__apply" type="submit">Применить</button>
+        <button class="button__reset" type="reset">Сбросить</button>
+      </div>
     </form>
+    </div>
     </section>
 
     <div class="catalog__wrapper">
