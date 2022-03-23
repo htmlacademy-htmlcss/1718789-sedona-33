@@ -1086,6 +1086,7 @@ body {
   background-image: url("../image/select-control-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  background-color: transparent;
 }
 
 .select__control:hover {
@@ -1100,6 +1101,7 @@ body {
   border: none;
   box-sizing: border-box;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .select__control:active {
@@ -1596,8 +1598,6 @@ body {
   grid-column: 2 / -1;
 }
 
-
-
 .modal__search-form input {
   background-color: #f2f2f2;
   border-radius: 4px;
@@ -1833,15 +1833,3 @@ body {
 .tooltip__toggle:focus + .tooltip__text {
   display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
