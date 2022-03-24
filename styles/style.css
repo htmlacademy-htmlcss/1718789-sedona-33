@@ -229,7 +229,7 @@ body {
   padding-bottom: 83px;
   background-color: #68A2CA;
   background-image: url("../image/logo-after.svg"), url("../image/main-logo-background.jpg");
-  background-size: 100% auto, 100% auto;
+  background-size: cover;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, center;
 }
