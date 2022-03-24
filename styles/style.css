@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("..//fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("..//fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -227,8 +227,9 @@ body {
 .main__logo {
   padding-top: 51px;
   padding-bottom: 83px;
+  background-color: #68A2CA;
   background-image: url("../image/logo-after.svg"), url("../image/main-logo-background.jpg");
-  background-size: 100% auto, 100% auto;
+  background-size: cover;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, center;
 }
@@ -335,11 +336,11 @@ body {
 }
 
 .what-we-have__item__blue {
-  background-color: rgba(131, 179, 211, 0.12);;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .what-we-have__item__gray {
-  background-color: rgba(131, 179, 211, 0.2);;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .what-we-have__about {
@@ -376,18 +377,21 @@ body {
 }
 
 .what-we-have__item-house {
+  background-color: rgba(131, 179, 211, 0.12);
   background: url("../image/main-house.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .what-we-have__item-burger {
+  background-color: #FFFFFF;
   background: url("../image/main-burger.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .what-we-have__item-gift {
+  background-color: rgba(131, 179, 211, 0.12);
   background: url("../image/main-gift.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -451,6 +455,7 @@ body {
   min-height: 411px;
   text-align: center;
   color: #ffffff;
+  background-color: #68A2CA;
   background-image: url("../image/background-mailing.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -660,7 +665,9 @@ body {
 .catalog-products {
   width: 1200px;
   color: #ffffff;
+  background-color: #68A2CA;
   background-image: url("../image/catalog-background.jpg");
+  background-size: cover;
 }
 
 .catalog-products__container {
